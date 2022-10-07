@@ -128,15 +128,58 @@ if(minetest.get_modpath("farming")) ~= nil then
       recipe = {"default:steel_ingot", "farming:hoe_steel", "basic_anvil:anvil"},
   	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
   })
+  if(minetest.get_modpath("moreores")) ~= nil then
+    minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:hoe_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:hoe_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:hoe_silver",
+		recipe = {"moreores:silver_ingot", "moreores:silver_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+  end
 end
 
 if(minetest.get_modpath("3d_armor")) ~= nil then
+  if(minetest.get_modpath("moreores")) ~= nil then
+    minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:helmet_mithril",
+      recipe = {"moreores:mithril_ingot", "3d_armor:helmet_mithril", "basic_anvil:anvil"},
+  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+    })
+    minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:chestplate_mithril",
+      recipe = {"moreores:mithril_ingot", "3d_armor:chestplate_mithril", "basic_anvil:anvil"},
+  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+    })
+    minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:leggings_mithril",
+      recipe = {"moreores:mithril_ingot", "3d_armor:leggings_mithril", "basic_anvil:anvil"},
+    replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+    })
+    minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:boots_mithril",
+      recipe = {"moreores:mithril_ingot", "3d_armor:boots_mithril", "basic_anvil:anvil"},
+    replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+    })
+     
+    
+  end
   minetest.register_craft({
       type = "shapeless",
       output = "3d_armor:helmet_steel",
       recipe = {"default:steel_ingot", "3d_armor:helmet_steel", "basic_anvil:anvil"},
-  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
-  })
+    replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+    })
   minetest.register_craft({
       type = "shapeless",
       output = "3d_armor:chestplate_steel",
@@ -230,4 +273,108 @@ if(minetest.get_modpath("3d_armor")) ~= nil then
       recipe = {"default:diamond", "3d_armor:boots_diamond", "basic_anvil:anvil"},
   	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
   })
+  
+  end 
+  if(minetest.get_modpath("moreores")) ~= nil then
+    minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:hoe_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:hoe_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:hoe_silver",
+		recipe = {"moreores:silver_ingot", "moreores:hoe_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
 end
+if(minetest.get_modpath("moreores")) ~= nil then
+    minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:sword_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:sword_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:sword_silver",
+		recipe = {"moreores:silver_ingot", "moreores:sword_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:sword_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:sword_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:sword_silver",
+		recipe = {"moreores:silver_ingot", "moreores:sword_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:sword_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:sword_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:sword_silver",
+		recipe = {"moreores:silver_ingot", "moreores:sword_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:axe_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:axe_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:axe_silver",
+		recipe = {"moreores:silver_ingot", "moreores:axe_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:pick_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:pick_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:pick_silver",
+		recipe = {"moreores:silver_ingot", "moreores:pick_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:shovel_mithril",
+		recipe = {"moreores:mithril_ingot", "moreores:shovel_mithril", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "moreores:shovel_silver",
+		recipe = {"moreores:silver_ingot", "moreores:shovel_silver", "basic_anvil:anvil"},
+		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+end
+
+	
+	

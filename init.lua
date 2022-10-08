@@ -133,14 +133,14 @@ if(minetest.get_modpath("farming")) ~= nil then
 		type = "shapeless",
 		output = "moreores:hoe_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:hoe_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:hoe_silver",
 		recipe = {"moreores:silver_ingot", "moreores:silver_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
   end
 end
@@ -273,6 +273,30 @@ if(minetest.get_modpath("3d_armor")) ~= nil then
       recipe = {"default:diamond", "3d_armor:boots_diamond", "basic_anvil:anvil"},
   	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
   })
+    minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:helmet_nether",
+      recipe = {"nether:nether_ingot", "3d_armor:helmet_nether", "basic_anvil:anvil"},
+  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+  })
+  minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:chestplate_nether",
+      recipe = {"nether:nether_ingot", "3d_armor:chestplate_nether", "basic_anvil:anvil"},
+  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+  })
+  minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:leggings_nether",
+      recipe = {"nether:nether_ingot", "3d_armor:leggings_nether", "basic_anvil:anvil"},
+  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+  })
+  minetest.register_craft({
+      type = "shapeless",
+      output = "3d_armor:boots_nether",
+      recipe = {"nether:nether_ingot", "3d_armor:boots_nether", "basic_anvil:anvil"},
+  	replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+  })
   
   end 
   if(minetest.get_modpath("moreores")) ~= nil then
@@ -280,14 +304,14 @@ if(minetest.get_modpath("3d_armor")) ~= nil then
 		type = "shapeless",
 		output = "moreores:hoe_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:hoe_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:hoe_silver",
 		recipe = {"moreores:silver_ingot", "moreores:hoe_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 end
 if(minetest.get_modpath("moreores")) ~= nil then
@@ -295,86 +319,176 @@ if(minetest.get_modpath("moreores")) ~= nil then
 		type = "shapeless",
 		output = "moreores:sword_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:sword_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:sword_silver",
 		recipe = {"moreores:silver_ingot", "moreores:sword_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:sword_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:sword_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:sword_silver",
 		recipe = {"moreores:silver_ingot", "moreores:sword_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:sword_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:sword_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:sword_silver",
 		recipe = {"moreores:silver_ingot", "moreores:sword_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:axe_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:axe_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:axe_silver",
 		recipe = {"moreores:silver_ingot", "moreores:axe_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:pick_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:pick_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:pick_silver",
 		recipe = {"moreores:silver_ingot", "moreores:pick_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:shovel_mithril",
 		recipe = {"moreores:mithril_ingot", "moreores:shovel_mithril", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 	
 	minetest.register_craft({
 		type = "shapeless",
 		output = "moreores:shovel_silver",
 		recipe = {"moreores:silver_ingot", "moreores:shovel_silver", "basic_anvil:anvil"},
-		placements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
 	})
 end
+-- add support for sheilds
 
-	
+if(minetest.get_modpath("shields")) ~= nil then
+    minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_steel",
+	    recipe = {"default:steel_ingot", "shields:shield_steel", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_bronze",
+	    recipe = {"default:bronze_ingot", "shields:shield_bronze", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_gold",
+	    recipe = {"default:gold_ingot", "shields:shield_gold", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_diamond",
+	    recipe = {"default:diamond", "shields:shield_diamond", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_steel",
+	    recipe = {"default:steel_ingot", "shields:shield_steel", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_mithril",
+	    recipe = {"default:mithril_ingot", "shields:shield_mithril", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+        type = "shapeless",
+	    output = "shields:shield_nether",
+	    recipe = {"nether:nether_ingot", "shields:shield_nether", "basic_anvil:anvil"},
+        replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+
+
+
+
+end
+-- Add support for castles modpack
+if(minetest.get_modpath("castle_weapons")) ~= nil then
+    minetest.register_craft({
+		type = "shapeless",
+		output = "castle_weapons:battleaxe",
+		recipe = {"default:steel_ingot", "castle_weapons:battleaxe", "basic_anvil:anvil"},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+end	
+	--add other nether tools
+if(minetest.get_modpath("nether")) ~= nil then
+    minetest.register_craft({
+		type = "shapeless",
+		output = "nether:pick_nether",
+		recipe = {"nether:nether_ingot", "nether:pick_nether", "basic_anvil:anvil"},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})	
+	minetest.register_craft({
+		type = "shapeless",
+		output = "nether:hoe_nether",
+		recipe = {"nether:nether_ingot", "nether:hoe_nether", "basic_anvil:anvil"},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+		type = "shapeless",
+		output = "nether:shovel_nether",
+		recipe = {"nether:nether_ingot", "nether:shovel_nether", "basic_anvil:anvil"},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+    minetest.register_craft({
+		type = "shapeless",
+		output = "nether:sword_nether",
+		recipe = {"nether:nether_ingot", "nether:sword_nether", "basic_anvil:anvil"},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+	minetest.register_craft({
+		type = "shapeless",
+		output = "nether:axe_nether",
+		recipe = {"nether:nether_ingot", "nether:axe_nether", "basic_anvil:anvil"},
+		replacements = {{"basic_anvil:anvil", "basic_anvil:anvil"}},
+	})
+end
 	
